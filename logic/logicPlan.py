@@ -51,6 +51,7 @@ def sentence1() -> Expr:
     """
     "*** BEGIN YOUR CODE HERE ***"
     A=Expr('A')
+    print(A)
     B=Expr('B')
     C=Expr('C')
     D=A | B
