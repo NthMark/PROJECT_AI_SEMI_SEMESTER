@@ -72,6 +72,7 @@ def sentence2() -> Expr:
     (not D) implies C
     """
     "*** BEGIN YOUR CODE HERE ***"
+    
     A=Expr('A')
     B=Expr('B')
     C=Expr('C')
@@ -80,6 +81,7 @@ def sentence2() -> Expr:
     F=A >> (~B&~D)
     G=(~(B&~C)>>A)
     H=~D>>C
+    print(conjoin(E,F,G,H))
     return conjoin(E,F,G,H)
     util.raiseNotDefined()
     "*** END YOUR CODE HERE ***"
